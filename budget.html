@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="budget.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <title>Budget Tracker</title>
+</head>
+<body>
+    <!-- Main title -->
+<h1>Budget Tracker</h1>
+<button  style="width: 16%;
+margin: 22px;
+margin-top: -10px;
+font-family: Geneva;
+font-size: 16px;
+padding: 7px;
+background-color: #1370d17a;
+color: #062b81;
+border: 2px solid #062b81;" onclick="location.href = 'budget2.html';" >Try out the customized one!</button>
+<!-- Opening div, vanishes after first question to user -->
+<div class="opening">
+  <p>Hello! To start tracking your budget, let's answer a few questions.</p>
+  <h2>What is your monthly income?</h2>
+  <!-- Input box for user to input income -->
+  <input type="number" id="income"><br>
+  <!-- Next button makes this div vanish and shows the next one -->
+  <button type="submit" id="next1">Next!</button>
+</div>
+<div class="image">
+  <img class="imging" src="Images/imges-3.png">
+ <img class="imging-1" src="Images/imges-4.png"> 
+ <img class="imging-2" src="Images/imges-5.png">
+</div>
+<!-- This div is hidden until the next button is pressed -->
+<div class="expenses">
+  <p>Great, now let's add in your regular household expenses. If you do not have one of these expenses, simply leave it blank.<p>
+  
+  <h2>Expenses</h2>
+ 
+ <!-- Parent div has flex properties -->
+<div class="flex">
+  <!-- Left side of screen -->
+ <div class="flex1">
+   <!-- Input boxes for each expense type -->
+  <h3>Rent:</h3>
+  <input type="number" id="expenseRent" class="exp"><br>
+  <h3>Power:</h3>
+  <input type="number" id="expensePower" class="exp"><br>
+  <h3>Water:</h3>
+  <input type="number" id="expenseWater" class="exp"><br>
+  <h3>Cable:</h3>
+  <input type="number" id="expenseCable" class="exp"><br>
+  <h3>Phone:</h3>
+  <input type="number" id="expensePhone" class="exp"><br>
+  <h3>Insurance:</h3>
+  <input type="number" id="expenseInsurance" class="exp"><br>
+  <h3>Other:</h3>
+  <input type="number" id="expenseOther" class="exp"><br>
+ </div>
+    
+ <!-- Right side of screen -->
+ <div class="flex2">
+  <h3>Gym:</h3>
+  <input type="number" id="expenseGym" class="exp"><br>
+  <h3>Groceries:</h3>
+  <input type="number" id="expenseGroceries" class="exp"><br>
+  <h3>Car:</h3>
+  <input type="number" id="expenseCar" class="exp"><br>
+  <h3>Gas:</h3>
+  <input type="number" id="expenseGas" class="exp"><br>
+  <h3>Other Food:</h3>
+  <input type="number" id="expenseFood" class="exp"><br>
+  <h3>Entertainment:</h3>
+  <input type="number" id="expenseEntertainment" class="exp"><br>
+  <h3>Other:</h3>
+  <input type="number" id="expenseOther2" class="exp"><br>
+ </div>
+</div><br>
+  <!-- Next button makes this div vanish and shows results -->  <button type="submit" id="next2">Next!</button>
+</div>
+
+<!-- Final div, only shows when the final button is pressed -->
+<div class="end">
+  <h2>Your Results...</h2>
+    <div class="totals"></div>
+  <h2>Your Breakdown...</h2>
+    <div class="breakdown"><div>
+</div>
+
+
+ <!-- Jquery library script tag -->
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script src="budget.js"></script>
+</body>
+</html>

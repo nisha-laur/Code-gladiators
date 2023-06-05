@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(47 95 237 / 19%);
+    overflow-x: hidden;
+}
+
+.nav-link {
+    margin: 0.5rem;
+    color: #e7e8e9;
+}
+.nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link {
+    width: 64% !important;
+}
+.dropdown-menu[data-bs-popper] {
+    top: 127% !important;
+    left: 130px ;
+    border-radius: 1rem;
+    margin-top: 1.025rem ;
+    background-color: #212529;
+}
+.dropdown-item{
+    color: #eef1f5;
+}

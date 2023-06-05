@@ -1,0 +1,82 @@
+body {
+    background-color:rgb(47 95 237 / 19%);
+  
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    margin: 0 auto;
+    overflow-x: hidden;
+    padding: 0;
+  }
+  #main-div{
+    height: 99vh;
+    width: 78vw;
+    margin: auto;
+    position: absolute;
+    top: 29%;
+    left: 10%;
+  }
+  .budget-app {
+    margin-top: -79px;
+  }
+  .card-panel {
+    padding: 20px 10px;
+  }
+  .budget-header h5 {
+    margin: 0;
+    color: #061aa3;
+  }
+  .btn, .btn-large, .btn-small {
+    
+    background-color: #061aa3;
+  }
+  .budget-plus {
+    text-align: center;
+    background: #b0ffb0;
+    width: 20px;
+  }
+  .budget-minus {
+    text-align: center;
+    background: #ffb6a9;
+    width: 20px;
+  }
+  .remove-row {
+    width: 20px;
+  }
+  .remove-row a {
+    color: tomato;
+  }
+  .teal.lighten-2 {
+    background-color: rgb(47 95 237 / 4%) !important;
+  }
+  .image{
+    width: 10%;
+    }
+    .imging{
+      width: 18rem;
+      position: absolute;
+      top: 7px;
+      left: -17px;
+      transform: rotate(19deg);
+    
+    }
+    .imging-1{
+      width: 18rem;
+      position: absolute;
+      bottom: -46px;
+      left: -45px;
+      transform: rotate(-38deg);
+    
+    }
+    .imging-2{
+      width: 18rem;
+      position: absolute;
+      bottom: 0px;
+      right: 5px;
+      transform: rotate(10deg);
+    
+    }
+    @media only screen and (max-width: 1024px){
+    .image{
+      display: none;
+    }
+    }

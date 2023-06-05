@@ -1,0 +1,191 @@
+body {
+    background-color: rgb(47 95 237 / 19%);
+}
+
+.nav-link {
+    margin: 0.5rem;
+    color: #e7e8e9;
+}
+
+.nav-fill .nav-item .nav-link,
+.nav-justified .nav-item .nav-link {
+    width: 64% !important;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 127% !important;
+    left: 130px;
+    border-radius: 1rem;
+    margin-top: 1.025rem;
+    background-color: #212529;
+}
+
+.dropdown-item {
+    color: #eef1f5;
+}
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800|Oswald:200,300,400,500,600,700&display=swap");
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#img1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/free-vector/gradient-cryptocurrency-concept_52683-77383.jpg?w=740&t=st=1685913220~exp=1685913820~hmac=6ca6b68514d982476dcb31d026b7ccb483b33aba0b0b04569dd70f109eb8845d);
+    /* background-image: url(Images/img-10.webp); */
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+#img2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/free-vector/gradient-installment-illustration_23-2149397487.jpg?w=740&t=st=1685911709~exp=1685912309~hmac=4ef9dc2555129802e970c49327cc5e68ddbad7803ea99e14a9f64587e21a7cb9);
+    /* background-image: url(Images/img-10.webp); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/free-vector/flat-design-cryptocurrency-concept_23-2149171102.jpg?w=740&t=st=1685912835~exp=1685913435~hmac=4c094114091417c68ff4ef23b1d1416b0e9da25fe45b8dd89e460567237452a1);
+    /* background-image: url(Images/img-10.webp); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img4{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/free-vector/flat-design-cryptocurrency-concept_23-2149156483.jpg?w=740&t=st=1685912562~exp=1685913162~hmac=f099173c75f10e45223250af4dadc02f5229f6fed66f4235bbb147843c88f716);
+    /* background-image: url(Images/img-10.webp); */
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img5{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/free-vector/hand-drawn-cardano-illustration_23-2149214816.jpg?w=740&t=st=1685912698~exp=1685913298~hmac=c6b1003b1d1a092b17c87c6be8f610ff67d3ee14372b67a4b0c55ebacd2067cd);
+    /* background-image: url(Images/img-10.webp); */
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img6{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/free-vector/gradient-staking-illustration_23-2149412093.jpg?w=740&t=st=1685912901~exp=1685913501~hmac=44c25ca0b329132428f98179ff8828bf59e5fa9a1fe60a6cc44041c42826f822);
+    /* background-image: url(Images/img-10.webp); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+html,
+body {
+    /* background-color: #202020; */
+    color: #fff;
+    /* margin: 15px; */
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.63;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Main CSS */
+.grid-wrapper>.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #2d2d2d;
+    padding: 30px;
+    transition: 0.2s;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 280px;
+    grid-auto-flow: dense;
+}
+
+/* Content Formatting */
+.grid-wrapper>.grid-item>img {
+    max-width: 70px;
+}
+
+.grid-wrapper>.grid-item>h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    margin: 20px 0 10px 0;
+    transition: 0.3s;
+}
+
+.grid-wrapper>.grid-item>p {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Merriweather', serif;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+a {
+    font-weight: 100 !important;
+}
+
+.grid-wrapper>.grid-item:hover,
+.grid-item:nth-child(4) {
+    background-color: #f438a1;
+}
+
+.grid-wrapper>.grid-item:hover h3 {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.grid-wrapper>.grid-item:hover p,
+.grid-item:nth-child(4) p {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+/* nth-child counter */
+.grid-wrapper {
+    counter-reset: nthChild;
+}
+
+.grid-wrapper>.grid-item>h3:after {
+    counter-increment: nthChild;
+    content: " :: " counter(nthChild);
+}
+
+/* 2x wide */
+.grid-item:nth-child(1),
+.grid-item:nth-child(8) {
+    grid-column: span 2;
+}
+
+/* 2x tall */
+.grid-item:nth-child(2),
+.grid-item:nth-child(5) {
+    grid-row: span 2;
+}
+
+/* 2x Big */
+.grid-item:nth-child(6) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+@media (max-width: 680px) {
+    .grid-item {
+        grid-column: unset !important;
+        grid-row: unset !important;
+    }
+}

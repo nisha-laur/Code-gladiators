@@ -1,0 +1,129 @@
+/* Page tags */
+
+body {
+    background-color:rgb(47 95 237 / 19%);
+  
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    margin: 0 auto;
+    overflow-x: hidden;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 32px;
+    color: #061aa3;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: white;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    text-align: left;
+  }
+  
+  p {
+    font-size: 18px;
+    color: white;
+  }
+  
+  input {
+    width: 40%;
+    padding: 10px;
+    font-family: Geneva;
+    font-size: 16px;
+    border: 2px solid #EEF5DB;
+    border-radius: 10px;
+    outline: none;
+  }
+  
+  input:focus {
+    border: 2px solid #7A9E9F;
+  }
+  
+  button {
+    width: 14%;
+    margin: 22px;
+    font-family: Geneva;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #1370d17a;
+    border: 2px solid #062b81;
+    border-radius: 24px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  button:active {
+    border: 2px solid #4F6367;
+  }
+  
+  /* Divs */
+  .opening, .expenses, .end {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #7c93e5;
+    padding: 20px;
+    border: solid #142ddd;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 8px;
+    border-right-width: 8px;
+    border-radius: 20px;
+  }
+  
+  .expenses, .end {
+    display: none;
+  }
+  
+  .exp {
+    width: 80%;
+  }
+  
+  /* Flex container */
+  .flex {
+    display: flex;
+    direction: row;
+    justify-content: space-around;
+  }
+  
+  .flex1, .flex2 {
+    width: 40%;
+  }
+.image{
+width: 10%;
+}
+.imging{
+  width: 18rem;
+  position: absolute;
+  top: 7px;
+  left: -17px;
+  transform: rotate(19deg);
+
+}
+.imging-1{
+  width: 18rem;
+  position: absolute;
+  bottom: -46px;
+  left: -45px;
+  transform: rotate(-38deg);
+
+}
+.imging-2{
+  width: 18rem;
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  transform: rotate(10deg);
+
+}
+@media only screen and (max-width: 1024px){
+.image{
+  display: none;
+}
+}

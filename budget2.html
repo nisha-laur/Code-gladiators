@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="budget2.css">
+    <title>Budget Tracker</title>
+</head>
+<body>
+  <div class="image">
+    <img class="imging" src="Images/imges-3.png">
+   <img class="imging-1" src="Images/imges-4.png"> 
+   <img class="imging-2" src="Images/imges-5.png">
+  </div>
+  <div id="main-div">
+  <div class="budget-app">
+    <div class="budget-header card-panel teal lighten-2 grey-text text-lighten-5"><h5>Budget Track</h5></div>
+    
+    
+    
+    <div class="row">	
+      
+      <div class="col m7">
+        <a class="waves-effect waves-light btn-small modal-trigger" href="#incomeFormModal"><i class="material-icons right">add</i>Add Income</a>
+        <a class="waves-effect waves-light btn-small modal-trigger" href="#expenseFormModal"><i class="material-icons right">add</i>Add Expense</a>
+        <table class="highlight budget-table">
+          <thead>
+            <tr>
+              <th>+/-</th>
+              <th>Category</th>
+              <th>Sub Category</th>
+              <th>Description</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+  
+          <tbody></tbody>
+        </table>
+      </div>
+  
+      <div class="col m5">			
+  
+        <div class="col m12">
+          <h6 class="center-align">Spending by Category</h6>
+          <canvas id="expenseGraph" width="400" height="200"></canvas>
+        </div>
+  
+      </div>		
+      
+    </div>
+    
+  </div>
+  
+  <!-- Modals -->
+  <div id="incomeFormModal" class="modal">
+    <div class="modal-content">
+      <form class="income-form col s12">
+        <label>Type</label>
+        <select class="browser-default">
+          <option value="" disabled selected>Choose Income Type</option>
+          <option value="active">Active</option>
+          <option value="portfolio">Portfolio</option>
+          <option value="passive">Passive</option>
+        </select>
+  
+        <div class="input-field">
+          <input id="amount" type="number">
+          <label for="amount">Monthly Amount</label>
+        </div>
+  
+        <div class="input-field">
+          <input id="description" type="text">
+          <label for="description">Description (Optional)</label>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Add
+          <i class="material-icons right">add</i>
+        </button>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  
+  <div id="expenseFormModal" class="modal">
+    <div class="modal-content">
+      <form class="expense-form col s12">
+        <label for="expenseCat">Expense Category</label>
+        <select class="browser-default" id="expenseCat">
+          <option value="" disabled selected>Choose Expense Category</option>
+          <option value="food">Food</option>
+          <option value="loan">Loan</option>
+          <option value="rent">Rent</option>
+          <option value="retail">Retail Non-Food</option>
+          <option value="insurance">Insurance</option>
+          <option value="subscriptions">Subscriptions</option>
+          <option value="healthcare">Healthcare</option>
+          <option value="utilities">Utilities</option>
+        </select>
+  
+        <label for="expenseSubCat">Expense Sub-Category</label>
+        <select class="browser-default" id="expenseSubCat" disabled>
+          <option value="" disabled selected>Choose Expense Sub-Category</option>
+          <option value="groceries" data-cat="food">Groceries</option>
+          <option value="restaurant" data-cat="food">Restaurant</option>
+          <option value="carInsurance" data-cat="insurance">Car Insurance</option>
+          <option value="homeInsurance" data-cat="insurance">Homeowners Insurance</option>
+          <option value="rentersInsurance" data-cat="insurance">Renter's Insurance</option>
+          <option value="healthInsurance" data-cat="insurance">Health Insurance</option>
+          <option value="doctorsVisit" data-cat="healthcare">Doctor's Visit</option>
+          <option value="prescriptions" data-cat="healthcare">Prescriptions</option>
+          <option value="plexus" data-cat="healthcare">Plexus</option>
+          <option value="mortgage" data-cat="loan">Mortgage</option>
+          <option value="creditCard" data-cat="loan">Credit Card</option>
+          <option value="carPayment" data-cat="loan">Car Payment</option>
+          <option value="rent" data-cat="rent">Rent</option>
+          <option value="retail" data-cat="retail">Retail Non-Food</option>
+          <option value="netflix" data-cat="subscriptions">Netflix</option>
+          <option value="internet" data-cat="subscriptions">Internet</option>
+          <option value="tv" data-cat="subscriptions">TV</option>
+          <option value="amazonPrime" data-cat="subscriptions">Amazon Prime</option>
+          <option value="amazonMusic" data-cat="subscriptions">Amazon Music</option>
+          <option value="xbox" data-cat="subscriptions">XBOX Live</option>
+          <option value="ea" data-cat="subscriptions">EA All Access</option>
+          <option value="moviepass" data-cat="subscriptions">Moviepass</option>
+          <option value="nes" data-cat="utilities">Nashville Electric Service</option>
+          <option value="water" data-cat="utilities">Water</option>
+          <option value="gas" data-cat="utilities">Gas</option>
+        </select>
+  
+        <div class="input-field">
+          <input id="paymentAmount" type="number">
+          <label for="paymentAmount">Payment Amount</label>
+        </div>
+  
+        <div class="input-field">
+          <input id="paymentDescription" type="text">
+          <label for="paymentDescription">Description (Optional)</label>
+        </div>
+  
+        <button class="btn waves-effect waves-light" type="submit" name="action">Add
+          <i class="material-icons right">add</i>
+        </button>
+      </form>
+  
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<script src="budget2.js"></script>
+</body>
+</html>
