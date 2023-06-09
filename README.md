@@ -27,14 +27,19 @@
 
 * The application will track progress towards these goals, providing reminders and visual representations of achievements.
 
-**Features of SpendSmart**
-* Keep track of where you are spending your money and hence optimizing your savings.
+**5. Transaction Management**
 
-* Data is represented using charts in a very user-friendly way and there are different sections for managing users resources. 
+* Users can edit or delete existing transactions if they need to make corrections or remove entries. This provides flexibility and accuracy in maintaining financial records.
 
-* Set your monthly savings goals and see the progress as time moves on. This will help you to grow good financial habits.
+ **6. Budgeting and Categories:**
 
-* You can even start investing using whatever savings you have left.
+* The solution will include a budgeting feature where users can set spending limits for different expense categories.
+
+* The application will track expenses against these budgets and provide visual indicators to show progress.
+
+
+
+
 
 
 ---
