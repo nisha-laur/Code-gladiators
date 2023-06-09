@@ -38,11 +38,10 @@
 * The application will track expenses against these budgets and provide visual indicators to show progress.
 
 
+# Home Page 
 
+<p> The home page of the JavaScript Finance Tracker is designed to provide users with an intuitive and user-friendly interface for managing their personal finances. It serves as the entry point to the application, where users can access various features and functionalities to track their income, expenses, and overall financial status.
 
-
-
----
 
 ![Slide_1](https://github.com/nisha-laur/Code-gladiators/assets/104618576/1098e71c-7235-4052-8970-c8a7310b9cbd)
 ![Slide_1](https://github.com/nisha-laur/Code-gladiators/assets/104618576/cc154ad7-372b-44b4-8645-61192b21aa98)
